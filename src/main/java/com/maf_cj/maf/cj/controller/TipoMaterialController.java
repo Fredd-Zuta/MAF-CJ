@@ -1,40 +1,30 @@
 package com.maf_cj.maf.cj.controller;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import com.maf_cj.maf.cj.controller.base.BaseControllerImpl;
 import com.maf_cj.maf.cj.entity.TipoMaterial;
-import com.maf_cj.maf.cj.service.TipoMaterialService;
+import com.maf_cj.maf.cj.service.TipoMaterialServiceImpl;
+import java.time.LocalDate;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 
 @RestController
-@RequestMapping("/tipomateriales")
-@Api(value = "TipoMateriales")
-public class TipoMaterialController {
-    @Autowired
-    TipoMaterialService tipoMaterialService;
-    @ApiOperation(value = "tipo de materiales")
-    @GetMapping
-    public List<TipoMaterial> findAll() {
-        return tipoMaterialService.findAll();
-}
-    @ApiOperation(value = "tipos de materiales")
-    @GetMapping(value = "/{id}")
-    public ResponseEntity<TipoMaterial> findById(@PathVariable Long id) {
-        TipoMaterial tipoMaterial = tipoMaterialService.findById(id);
-        return ResponseEntity.ok(tipoMaterial);
+@CrossOrigin(origins = "*")
+@RequestMapping(path = "api/tipomateriales")
+public class TipoMaterialController extends BaseControllerImpl<TipoMaterial, TipoMaterialServiceImpl> {
+    
+    @GetMapping("/actuales")
+    public ResponseEntity<?> tipoMaterialActuales(){
+        try {
+            LocalDate now = LocalDate.now();
+            return ResponseEntity.status(HttpStatus.OK).body(service.TipoMaterialActuales());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\": \"Error, intentelo más tarde, codigo: " + e.getMessage() +" \"}");
+        }
     }
-    @ApiOperation(value = "Agregar documento")
-    @PostMapping
-    public TipoMaterial save(@RequestBody TipoMaterial tipoMaterial) {
-        return tipoMaterialService.save(tipoMaterial);
-    }
-    @ApiOperation(value = "Elimina un documento")
-    @DeleteMapping(value = "/{id}")
-    public void deleteById(@PathVariable Long id) {
-        tipoMaterialService.deleteById(id);
-    }
+    
 }

@@ -2,19 +2,10 @@
 package com.maf_cj.maf.cj.service;
 
 import com.maf_cj.maf.cj.entity.TipoPersona;
+import com.maf_cj.maf.cj.service.base.BaseService;
 
-import java.util.List;
 
 
-public interface TipoPersonaService {
-    
-   public List<TipoPersona> findAll();
+public interface TipoPersonaService  extends BaseService<TipoPersona, Long> {
 
-    public TipoPersona findById(Long id);
-
-    public TipoPersona save(TipoPersona tipopersona);
-
-    public void delete(TipoPersona tipopersona);
-
-    public void deleteById(Long id); 
 }

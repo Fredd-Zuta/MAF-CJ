@@ -1,22 +1,17 @@
 
 package com.maf_cj.maf.cj.controller;
 
-import lombok.Data;
+import com.maf_cj.maf.cj.controller.base.BaseControllerImpl;
+import com.maf_cj.maf.cj.entity.TipoPersona;
+import com.maf_cj.maf.cj.service.TipoPersonaServiceImpl;
 
-import javax.persistence.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Data
-@Entity 
-@Table(name = "tipo_personas")
-public class TipoPersonaController {
-        @Id
-    @Column(name = "tipe_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long tipeId;
-    
-    @Column(name = "nombre")
-    private String nombre;
-    
-    @Column(name = "descripcion")
-    private String descripcion;
+@RestController
+@CrossOrigin(origins = "*")
+@RequestMapping(path = "api/tipo_personas")
+public class TipoPersonaController extends BaseControllerImpl<TipoPersona, TipoPersonaServiceImpl> {
+
 }

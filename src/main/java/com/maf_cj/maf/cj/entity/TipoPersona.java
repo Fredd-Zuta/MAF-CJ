@@ -2,7 +2,6 @@
 package com.maf_cj.maf.cj.entity;
 
 import com.maf_cj.maf.cj.entity.base.Base;
-import lombok.*;
 
 import javax.persistence.*;
 import lombok.AllArgsConstructor;

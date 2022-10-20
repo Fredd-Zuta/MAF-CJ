@@ -1,18 +1,24 @@
 package com.maf_cj.maf.cj.entity;
 
-import lombok.Data;
+import com.maf_cj.maf.cj.entity.base.Base;
+import lombok.*;
 
 import javax.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
 @Entity
 @Table(name = "tipo_material")
-public class TipoMaterial {
-    @Id
-    @Column(name = "id_tima")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  long idTima;
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class TipoMaterial extends Base{
 
     @Column(name = "tipodoc")
     private String tipoDoc;
 }
+
+

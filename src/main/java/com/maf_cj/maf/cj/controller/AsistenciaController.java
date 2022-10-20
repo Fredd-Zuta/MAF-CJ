@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  *
- * @author acer
+ * @author maf-cf
  */
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping(path = "api/asistencias")
 public class AsistenciaController extends BaseControllerImpl<Asistencia, AsistenciaServiceImpl> {
+    
     @GetMapping("reporte")
     public ResponseEntity<?> reporte(@RequestParam String fecha, @RequestParam String id_taller){
        try {

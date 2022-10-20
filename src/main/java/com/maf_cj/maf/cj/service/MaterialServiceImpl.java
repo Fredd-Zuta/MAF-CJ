@@ -4,37 +4,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.maf_cj.maf.cj.entity.Material;
 import com.maf_cj.maf.cj.repository.MaterialRepository;
+import com.maf_cj.maf.cj.repository.base.BaseRepository;
+import com.maf_cj.maf.cj.service.base.BaseServiceImpl;
 
 import java.util.List;
 
 @Service
-public class MaterialServiceImpl implements MaterialService {
+public class MaterialServiceImpl extends BaseServiceImpl<Material, Long> implements MaterialService {
     @Autowired
     private MaterialRepository materialRepository;
-
-    @Override
-    public List<Material> findAll() {
-            return (List<Material>) materialRepository.findAll();
-        }
-
-
-    @Override
-    public Material findById(Long id) {
-       return materialRepository.findById(id).orElse(null);
+    
+    public MaterialServiceImpl(BaseRepository<Material, Long> baseRepository) {
+        super(baseRepository);
     }
-
+    
     @Override
-    public Material save(Material material) {
-        return materialRepository.save(material);
-    }
-
-    @Override
-    public void delete(Material material) {
-    materialRepository.delete(material);
-    }
-
-    @Override
-    public void deleteById(long id) {
-    materialRepository.deleteById(id);
+    public List<Material> materialesActuales() throws Exception {
+      try {
+          List<Material> list = materialRepository.materialesActuales();
+          return list;
+      }catch (Exception e){
+          throw new Exception(e.getMessage());
+      }
     }
 }
