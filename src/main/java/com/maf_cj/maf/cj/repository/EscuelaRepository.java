@@ -1,8 +1,8 @@
 
 package com.maf_cj.maf.cj.repository;
 
-import com.mafcj.mafcj.entity.Escuela;
-import com.mafcj.mafcj.repository.Base.BaseRepository;
+import com.maf_cj.maf.cj.entity.Escuela;
+import com.maf_cj.maf.cj.repository.base.BaseRepository;
 import org.springframework.stereotype.Repository;
 
 /**

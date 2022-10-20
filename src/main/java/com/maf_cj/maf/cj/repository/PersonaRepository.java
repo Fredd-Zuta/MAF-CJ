@@ -2,7 +2,7 @@
 package com.maf_cj.maf.cj.repository;
 
 import com.maf_cj.maf.cj.entity.Persona;
-import com.mafcj.mafcj.repository.Base.BaseRepository;
+import com.maf_cj.maf.cj.repository.base.BaseRepository;
 import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

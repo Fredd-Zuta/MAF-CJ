@@ -1,7 +1,7 @@
 
 package com.maf_cj.maf.cj.repository;
 import com.maf_cj.maf.cj.entity.Asistencia;
-import com.mafcj.mafcj.repository.Base.BaseRepository;
+import com.maf_cj.maf.cj.repository.base.BaseRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
@@ -10,10 +10,6 @@ import java.time.LocalDate;
 import java.util.List;
 
 
-/**
- *
- * @author acer
- */
 @Repository
 public interface AsistenciaRepository extends BaseRepository<Asistencia, Long> {
     @Query("SELECT a FROM Asistencia a WHERE a.fecha = :fecha AND a.taller.id = :id_taller")

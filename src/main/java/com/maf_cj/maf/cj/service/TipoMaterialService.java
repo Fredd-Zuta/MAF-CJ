@@ -1,6 +1,6 @@
 package com.maf_cj.maf.cj.service;
 
-import proyecto.maf.cj.entity.TipoMaterial;
+import com.maf_cj.maf.cj.entity.TipoMaterial;
 
 import java.util.List;
 

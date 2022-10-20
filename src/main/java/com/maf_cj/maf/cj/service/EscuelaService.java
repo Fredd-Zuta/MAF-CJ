@@ -1,14 +1,11 @@
 
 
-package com.mafcj.mafcj.service;
+package com.maf_cj.maf.cj.service;
 
-import com.mafcj.mafcj.entity.Escuela;
-import com.mafcj.mafcj.service.base.BaseService;
+import com.maf_cj.maf.cj.entity.Escuela;
+import com.maf_cj.maf.cj.service.base.BaseService;
 
-/**
- *
- * @author acer
- */
+
 public interface EscuelaService extends BaseService<Escuela, Long> {
     
 }

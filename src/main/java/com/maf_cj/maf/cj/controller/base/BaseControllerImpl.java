@@ -1,12 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.mafcj.mafcj.controller.base;
 
-import com.mafcj.mafcj.entity.base.Base;
-import com.mafcj.mafcj.service.base.BaseServiceImpl;
+package com.maf_cj.maf.cj.controller.base;
+
+import com.maf_cj.maf.cj.entity.base.Base;
+import com.maf_cj.maf.cj.service.base.BaseServiceImpl;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

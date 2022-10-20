@@ -3,7 +3,7 @@ package com.maf_cj.maf.cj.controller;
 
 import com.maf_cj.maf.cj.entity.Taller;
 import com.maf_cj.maf.cj.service.TallerServiceImpl;
-import com.mafcj.mafcj.controller.base.BaseControllerImpl;
+import com.maf_cj.maf.cj.controller.base.BaseControllerImpl;
 import java.time.LocalDate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

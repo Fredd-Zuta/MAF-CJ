@@ -1,7 +1,7 @@
 
 package com.maf_cj.maf.cj.entity;
 
-import com.maf_cj.mafcj.entity.base.Base;
+import com.maf_cj.maf.cj.entity.base.Base;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;

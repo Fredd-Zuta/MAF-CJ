@@ -3,7 +3,7 @@ package com.maf_cj.maf.cj.controller;
 
 import com.maf_cj.maf.cj.entity.Persona;
 import com.maf_cj.maf.cj.service.PersonaServiceImpl;
-import com.mafcj.mafcj.controller.base.BaseControllerImpl;
+import com.maf_cj.maf.cj.controller.base.BaseControllerImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;

@@ -3,8 +3,8 @@ package com.maf_cj.maf.cj.service;
 
 import com.maf_cj.maf.cj.entity.Persona;
 import com.maf_cj.maf.cj.repository.PersonaRepository;
-import com.mafcj.mafcj.repository.Base.BaseRepository;
-import com.mafcj.mafcj.service.base.BaseServiceImpl;
+import com.maf_cj.maf.cj.repository.base.BaseRepository;
+import com.maf_cj.maf.cj.service.base.BaseServiceImpl;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

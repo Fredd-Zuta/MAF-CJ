@@ -7,13 +7,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.mafcj.mafcj.entity.base.Base;
+import com.maf_cj.maf.cj.entity.base.Base;
 import lombok.*;
 
-/**
- *
- * @author maf-cj
- */
+
 
 @Entity
 @Table(name = "personas")

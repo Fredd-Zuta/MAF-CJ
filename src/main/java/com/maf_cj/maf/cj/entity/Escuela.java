@@ -1,7 +1,7 @@
 
 package com.maf_cj.maf.cj.entity;
 
-import com.mafcj.mafcj.entity.base.Base;
+import com.maf_cj.maf.cj.entity.base.Base;
 import javax.persistence.*;
 import lombok.*;
 

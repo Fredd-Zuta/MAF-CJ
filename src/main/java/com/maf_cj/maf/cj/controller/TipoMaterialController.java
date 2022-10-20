@@ -5,8 +5,8 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import proyecto.maf.cj.entity.TipoMaterial;
-import proyecto.maf.cj.service.TipoMaterialService;
+import com.maf_cj.maf.cj.entity.TipoMaterial;
+import com.maf_cj.maf.cj.service.TipoMaterialService;
 
 import java.util.List;
 

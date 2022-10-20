@@ -1,7 +1,7 @@
 
-package com.mafcj.mafcj.service.base;
+package com.maf_cj.maf.cj.service.base;
 
-import com.mafcj.mafcj.entity.base.Base;
+import com.maf_cj.maf.cj.entity.base.Base;
 import java.io.Serializable;
 import java.util.List;
 

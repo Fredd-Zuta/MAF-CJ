@@ -4,8 +4,8 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import proyecto.maf.cj.entity.Material;
-import proyecto.maf.cj.service.MaterialService;
+import com.maf_cj.maf.cj.entity.Material;
+import com.maf_cj.maf.cj.service.MaterialService;
 
 import java.util.List;
 

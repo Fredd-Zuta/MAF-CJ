@@ -3,8 +3,8 @@ package com.maf_cj.maf.cj.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import proyecto.maf.cj.entity.TipoPersona;
-import proyecto.maf.cj.repository.TipoPersonaRepository;
+import com.maf_cj.maf.cj.entity.TipoPersona;
+import com.maf_cj.maf.cj.repository.TipoPersonaRepository;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@
 package com.maf_cj.maf.cj.service;
 
 import com.maf_cj.maf.cj.entity.Facultad;
-import com.mafcj.mafcj.service.base.BaseService;
+import com.maf_cj.maf.cj.service.base.BaseService;
 
 /**
  *

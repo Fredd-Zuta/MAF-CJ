@@ -3,7 +3,7 @@ package com.maf_cj.maf.cj.entity;
 
 
 import javax.persistence.*;
-import com.mafcj.mafcj.entity.base.Base;
+import com.maf_cj.maf.cj.entity.base.Base;
 import lombok.*;
 import java.time.LocalDate;
 /**

@@ -3,8 +3,8 @@ package com.maf_cj.maf.cj.service;
 
 import com.maf_cj.maf.cj.entity.Facultad;
 import com.maf_cj.maf.cj.repository.FacultadRepository;
-import com.mafcj.mafcj.repository.Base.BaseRepository;
-import com.mafcj.mafcj.service.base.BaseServiceImpl;
+import com.maf_cj.maf.cj.repository.base.BaseRepository;
+import com.maf_cj.maf.cj.service.base.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

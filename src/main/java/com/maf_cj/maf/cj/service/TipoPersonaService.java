@@ -1,7 +1,7 @@
 
 package com.maf_cj.maf.cj.service;
 
-import proyecto.maf.cj.entity.TipoPersona;
+import com.maf_cj.maf.cj.entity.TipoPersona;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@
 package com.maf_cj.maf.cj.service;
 
 import com.maf_cj.maf.cj.entity.Asistencia;
-import com.mafcj.mafcj.service.base.BaseService;
+import com.maf_cj.maf.cj.service.base.BaseService;
 import java.time.LocalDate;
 import java.util.List;
 

@@ -2,8 +2,8 @@ package com.maf_cj.maf.cj.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import proyecto.maf.cj.entity.TipoMaterial;
-import proyecto.maf.cj.repository.TipoMaterialRepository;
+import com.maf_cj.maf.cj.entity.TipoMaterial;
+import com.maf_cj.maf.cj.repository.TipoMaterialRepository;
 
 import java.util.List;
 
