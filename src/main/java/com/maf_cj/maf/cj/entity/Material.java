@@ -23,4 +23,7 @@ public class Material extends Base{
   @Column(name = "decripcion")
   private String Descripcion;
 
+  @ManyToOne
+    @JoinColumn(name="id_tipo_material")
+    private TipoMaterial tipo_material;
 }

@@ -6,10 +6,8 @@ import javax.persistence.*;
 import com.maf_cj.maf.cj.entity.base.Base;
 import lombok.*;
 import java.time.LocalDate;
-/**
- *
- * @author acer
- */
+
+
 @Entity
 @Table(name = "asistencias")
 @NoArgsConstructor
@@ -20,6 +18,9 @@ public class Asistencia extends Base {
     @Column(name = "fecha")
     private LocalDate fecha;
     
+    @Column(name = "tipoper")
+    private String tipoper;
+    
     @ManyToOne
     @JoinColumn(name="id_taller")
     private Taller taller;
@@ -27,5 +28,7 @@ public class Asistencia extends Base {
     @ManyToOne
     @JoinColumn(name="id_persona")
     private Persona persona;
+    
+    
     
 }

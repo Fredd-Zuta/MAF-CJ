@@ -22,6 +22,9 @@ public class Taller extends Base {
     @Column(name="tema")
     private String tema;
     
+    @Column(name="descrip")
+    private String descrip;
+    
     @Column(name="fecha")
     private LocalDate fecha;
     
@@ -37,4 +40,9 @@ public class Taller extends Base {
     @ManyToOne
     @JoinColumn(name="id_programa")
     private Programa programa;
+    
+    @ManyToOne
+    @JoinColumn(name="id_taller")
+    private Taller taller;
+    
 }
